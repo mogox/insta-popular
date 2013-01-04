@@ -7,6 +7,7 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
+  gem "handlebars_assets"
 end
 
 gem 'jquery-rails'
@@ -15,11 +16,15 @@ gem "bootstrap-sass", ">= 2.1.1.0"
 gem "cancan", ">= 1.6.8"
 gem "rolify", ">= 3.2.0"
 gem "figaro", ">= 0.5.0"
+gem "backbone-on-rails"
+gem "instagram"
+
 
 group :test, :development do
   gem "rspec-rails", ">= 2.11.4"
   gem "factory_girl_rails", ">= 4.1.0"
   gem "debugger"
+  gem "looksee"
 end
 
 group :development do

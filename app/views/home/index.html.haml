@@ -1,2 +1,10 @@
-%h1 Home#index
-%p Find me in app/views/home/index.html.haml
+%h1 Popular
+
+%div#app
+  - while @popular.present? do
+    .row
+      - 4.times do
+        - medium = @popular.pop
+        .span3
+          = image_tag medium.images.low_resolution.url, class: 'media'
+          = medium.caption.text if medium.caption
